@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários em HTML</title>
 </head>
+
 <body>
     <main>
         <section>
             <form name="cadastro" method="post" action="cadastro.php">
                 <fieldset>
                     <legend>Dados pessoais</legend>
-                <!-- campos, botões -->
-                 <label for="nome">Nome:</label> 
-                 <input type="text" placeholder="Digite o nome" required  id="nome"/>
-                 <label for="email">Email:</label> 
-                 <input type="email" placeholder="Digite o email" required id="email" />
+                    <p>Mantenha uma senha forte</p>
+                    <!-- campos, botões -->
+                    <div id="nome">
+                        <label for="nome-cp">Nome:</label>
+                        <input type="text" placeholder="Digite o nome" required id="nome-cp" />
+                    </div>
+
+                    <div id="email">
+                        <label for="email-cp">Email:</label>
+                        <input type="email" placeholder="Digite o email" required id="email-cp" />
+                    </div>
                 </fieldset>
-                 <input type="submit" value="cadastrar">
-              
-                
+                <input type="submit" value="cadastrar">
+
+
             </form>
         </section>
     </main>
 </body>
+
 </html>
