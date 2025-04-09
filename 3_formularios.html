@@ -44,7 +44,7 @@
                         <input type="text" placeholder="Cidade" required id="cidade-cp">
                     </div>
 
-                    <div id="estado"></div>
+                    <div id="estado">
                     <label for="esatdo-cp">Estado:</label>
                     <select name="uf" id="estado-cp">
                         <option value="">Selecione um estado</option>
@@ -75,13 +75,17 @@
                         <option value="SP">São Paulo</option>
                         <option value="SE">Sergipe</option>
                         <option value="TO">Tocantins</option>
-
                     </select>
+                </div>
 
+                <div id="whatsapp">
+                    <label for="whatsapp-cp">WhatsApp:</label>
+                    <input type="tel" placeholder="99-99999-9999" required id="whatsapp-cp" pattern="[0-9]{2}[0-9]{5}[0-9]{4}">
+                </div>
+
+                </div>
                 </fieldset>
                 <input type="submit" value="cadastrar">
-
-
             </form>
         </section>
     </main>
