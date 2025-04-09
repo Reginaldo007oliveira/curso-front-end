@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários em HTML</title>
+    <style>
+        label {
+            margin: 10px 0;
+            display: inline-block;
+        }
+    </style>
 </head>
 
 <body>
@@ -45,50 +51,76 @@
                     </div>
 
                     <div id="estado">
-                    <label for="esatdo-cp">Estado:</label>
-                    <select name="uf" id="estado-cp">
-                        <option value="">Selecione um estado</option>
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espírito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
-                    </select>
-                </div>
+                        <label for="esatdo-cp">Estado:</label>
+                        <select name="uf" id="estado-cp">
+                            <option value="">Selecione um estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
 
-               
-                <div id="whatsapp">
-                    <label for="whatsapp-cp">WhatsApp:</label>
-                    <input type="tel" placeholder="99-99999-9999" required id="whatsapp-cp" pattern="[0-9]{2}[0-9]{5}[0-9]{4}">
-                </div>
 
-                <div id="observacoes">
-                    <label for="observacoes-cp">Observações:</label><br>
-                    <textarea  name="observacoes" id="observacoes-cp" cols="30" rows="6"> Digite aqui!!!</textarea>
-                </div>
+                    <div id="whatsapp">
+                        <label for="whatsapp-cp">WhatsApp:</label>
+                        <input type="tel" placeholder="99-99999-9999" required id="whatsapp-cp"
+                            pattern="[0-9]{2}[0-9]{5}[0-9]{4}">
+                    </div>
 
+                    <div id="observacoes">
+                        <label for="observacoes-cp">Observações:</label><br>
+                        <textarea name="observacoes" id="observacoes-cp" cols="30" rows="6"> Digite aqui!!!</textarea>
+                    </div>
+
+                </fieldset>
+                <fieldset id="dados-pessoa-juridica">
+                    <legend>Dados Pessoa Jurídica</legend>
+
+                    <div id="razao-social">
+                        <label for="razao-social-cp">Razão Social:</label>
+                        <input type="text" placeholder="Digite o nome" required id="razao-social-cp" />
+                    </div>
+
+                    <div id="nome-fantasia">
+                        <label for="nome-fantasia-cp">Nome Faantasia:</label>
+                        <input type="text" placeholder="Digite o nome fantasia" required id="nome-fantasia-cp" />
+                    </div>
+
+                    <div id="cnpj">
+                        <label for="cnpj-cp">CNPJ:</label>
+                        <input type="text" placeholder="Digite o CNPJ" required id="cnpj-cp" />
+                    </div>
+
+                    <div id="ie">
+                        <label for="ie-cp">Inscrição Estadual:</label>
+                        <input type="text" placeholder="Digite a inscrição estadual" required id="ie-cp" />
+                        <input type="checkbox" value="isento-ie"><span>Isento do Inscrição Estadual</span>
+                    </div>
+                   
                 </fieldset>
                 <input type="submit" value="cadastrar">
             </form>
